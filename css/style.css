@@ -29,6 +29,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--primary-color);
 }
 
+
 .module-section {
   margin: 10px 0;
   padding: 10px;
@@ -47,6 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 .module-content.hidden {
   display: none;
 }
+
 
 
 
@@ -281,7 +283,11 @@ header {
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   padding: 3rem;
+
   margin: 0 0 3rem;
+
+  
+
 }
 
 .module-header {
@@ -292,7 +298,10 @@ header {
 
 .module-section {
   margin-bottom: 3rem;
+
   border-color: #ffffff
+
+
 }
 
 .artifacts-grid {
@@ -508,6 +517,7 @@ footer {
   color: var(--accent-color);
   font-size: 1.5rem;
   margin-right: 0.5rem;
+
 }
 
 
@@ -552,3 +562,4 @@ footer {
   color: black;
   box-shadow: 0 0 10px #c600ff, 0 0 20px #c600ff inset;
 }
+

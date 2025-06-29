@@ -259,6 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initGsapAnimations();
   initPageTransitions();
   initMobileMenu();
+
 });
 
 
@@ -270,3 +271,4 @@ document.addEventListener('DOMContentLoaded', () => {
       this.textContent = isHidden ? 'View More' : 'View Less';
     });
   });
+
