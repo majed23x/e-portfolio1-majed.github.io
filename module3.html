@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,12 +7,68 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    .container {
+      padding: 0 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .navbar, .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .footer-column {
+      flex: 1 1 100%;
+      margin-bottom: 1rem;
+    }
+    .footer-content {
+      flex-direction: column;
+    }
+    .mobile-menu {
+      display: none;
+    }
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .mobile-menu {
+        display: block;
+        cursor: pointer;
+      }
+    }
+    .toggle-btn {
+      background-color: #6a51cf;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-left: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .module-content.hidden {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-  <!-- Page Transition Element -->
   <div class="page-transition" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: #6a51cf; transform: scaleY(0); transform-origin: bottom; z-index: 9999;"></div>
-  
-  <!-- Header -->   
+
   <header>
     <div class="container">
       <nav class="navbar">
@@ -31,7 +86,6 @@
     </div>
   </header>
 
-  <!-- Module Detail Section -->
   <div class="module-page-container">
     <div class="container">
       <a href="modules.html" class="back-button" data-transition>
@@ -40,14 +94,13 @@
         </svg>
         Back to Modules
       </a>
-      
-      <div class="module-detail"> 
+
+      <div class="module-detail">
         <div class="module-header">
           <h1>Machine Learning April 2025 A</h1>
           <p>An exploration of modern web development practices, frameworks, and tools.</p>
         </div>
-        
-        <!-- Learning Outcomes -->
+
         <div class="module-section">
           <h2>Learning Outcomes</h2>
           <ul>
@@ -57,30 +110,27 @@
             <li>Apply accessibility best practices to make web content available to all users</li>
             <li>Utilize modern build tools and deployment processes for web applications</li>
             <li>Create and consume RESTful APIs to integrate web applications with backend services</li>
-            
           </ul>
         </div>
-        
+      </div>
 
-          </div>
-
-      <div class="module-detail"> 
-
-        
-        <!-- Learning Outcomes -->
-<div class="module-section">
+      <div id="units">
+        <div class="module-detail">
+          <div class="module-section">
   <h2>
     Unit 1: Collaborative Discussion 1: The 4th Industrial Revolution
     <button class="toggle-btn">View More</button>
   </h2>
   <div class="module-content hidden">
+    <h3>Learning Outcomes:</h3>
   <ul >
     <li>Have a better understanding of the role of machine learning in industry.</li>
     <li>Identify the skill sets required to become proficient in machine learning</li>
     <li>Know about the factors impacting machine learning and ways to address it.</li>
     <li>Understand the categories of machine learning.</li>
   </ul>
-  <a href="InitialPost.docx" class="download-btn" download> Download Initial Post </a>
+  <h3>Collaborative Discussion 1:</h3>
+  <a href="InitialPost.docx" class="download-btn" download>📄 Download Initial Post </a>
 </div>
 </div>
 
@@ -95,6 +145,7 @@
     <button class="toggle-btn">View More</button>
   </h2>
   <div class="module-content hidden">
+    <h3>Learning Outcomes:</h3>
   <ul>
     <li>The steps involved with EDA.</li>
     <li>Understanding the dataset through feature exploration.</li>
@@ -102,8 +153,9 @@
     <li>Visual analysis of the dataset.</li>
   </ul>
   <ul>
-  <li><a href="peer1.docx" class="download-btn" download> Download   Peer responses from Teammates  </a></li>
- <li> <a href="peer2.docx" class="download-btn" download> Download Peer responses to teammates </a></li>
+    <h3>Collaborative Discussion 1:</h3>
+  <li><a href="peer1.docx" class="download-btn" download>📄 Download Peer responses from Teammates  </a></li>
+ <li> <a href="peer2.docx" class="download-btn" download>📄 Download Peer responses to teammates </a></li>
  
   </ul>
   </div>
@@ -121,23 +173,25 @@
   </h2>
   <div class="module-content hidden">
   <ul class="module-content hidden">
+    <h3>Learning Outcomes:</h3>
     <li>Gain theoretical understanding of correlation and regression.</li>
     <li>Understand how to compute correlation and regression.</li>
     <li>Be able to apply these statistical techniques in real world scenario.</li>
 
   </ul>
-
+<h3>E-portfolio Activties:</h3>
   <h4>Covariance Results:</h4>
   <img src="./public/images/covariance.png">
 
     <h4>linear Regression Results:</h4>
   <img src="./public/images/Linear.PNG">
   <ul>
-  <li><a href="./python_files/unit3/covariance.py" class="download-btn" download> Download  python files  </a></li>
-  <li><a href="./python_files/unit3/linear_regression.py" class="download-btn" download> Download  python files  </a></li>
-  <li><a href="./python_files/unit3/multiple_linear_regression.py" class="download-btn" download> Download  python files  </a></li>
-  <li><a href="./python_files/unit3/polynomail_regression.py" class="download-btn" download> Download  python files  </a></li>
-    <li><a href="./python_files/unit3/polynomail_regression.py" class="download-btn" download> Download  Summary Post  </a></li>
+  <li><a href="./python_files/unit3/covariance.py" class="download-btn" download>📄 Download Covariance   </a></li>
+  <li><a href="./python_files/unit3/linear_regression.py" class="download-btn" download>📄 Download Linear Regression  </a></li>
+  <li><a href="./python_files/unit3/multiple_linear_regression.py" class="download-btn" download>📄 Download Multiple Linear  </a></li>
+  <li><a href="./python_files/unit3/polynomail_regression.py" class="download-btn" download>📄 Download regression   </a></li>
+  <h3>Collaborative Discussion 1:</h3>
+    <li><a href="./python_files/unit3/polynomail_regression.py" class="download-btn" download>📄 Download  Summary Post  </a></li>
  
  
   </ul>
@@ -153,21 +207,23 @@
     Unit 4:Linear Regression with Scikit-Learn
     <button class="toggle-btn">View More</button>
   </h2>
-  <ul class="module-content hidden">
+  <div class="module-content hidden">
+  <ul class=>
+    <h3>Learning Outcomes:</h3>
     <li>Gain theoretical understanding of correlation and regression.</li>
     <li>Understand how to compute correlation and regression.</li>
     <li>Be able to apply these statistical techniques in real world scenario.</li>
 
   </ul>
-  <h3>E-portfolio Activity: Jaccard Coefficient Calculations</h3>
+  <h3>Team Project colleagues:</h3>
   <ul>
-  <li><a href="peer1.docx" class="download-btn" download> Python Files  </a></li>
+  <li><a href="peer1.docx" class="download-btn" download>📄 Download Team Contract </a></li>
  
  
   </ul>
 </div>
 </div>
-
+      </div>
 <div class="module-detail"> 
 <div class="module-section">
   <h2>
@@ -175,21 +231,22 @@
     <button class="toggle-btn">View More</button>
   </h2>
   <div class="module-content hidden">
-    <h3>This week we shall learn about:</h3>
+    <h3>Learning Outcomes:</h3>
   <ul>
     <li>Basic idea behind clustering.</li>
     <li>Different techniques of distance measurements.</li>
     <li>K-means and agglomerative clustering.</li>
     <li>How to evaluate clusters.</li>
   </ul>
-      <h3>On completion of this week, you will be able to:</h3>
-  <ul>
-    <li>Understand the logic which underpins clustering.</li>
-    <li>Identify skill sets required to evaluate the results of cluster analysis.</li>
-    <li>Understand the pitfalls of clustering techniques.</li>
-    
-  </ul>
 
+  <ul>
+    <h3>E-portfolio Activities:</h3>
+      <h4>Clustering Results:</h4>
+  <img src="./public/images/covariance.png">
+  <li><a href="./python_files/unit3/covariance.py" class="download-btn" download>📄 Download Jaccard Coefficient Calculations  </a></li>
+
+  
+  </ul>
   </div>
 </div>
 
@@ -205,12 +262,7 @@
     <button class="toggle-btn">View More</button>
   </h2>
   <div class="module-content hidden">
-    <h3>This week we shall learn about:</h3>
-  <ul>
-    <li>The functionalities of Python libraries used in the K-Means clustering algorithm.</li>
-    <li>Role of clustering algorithms in answering some interesting questions based on a dataset.</li>
-  </ul>
-      <h3>On completion of this week, you will be able to:</h3>
+      <h3>Learning Outcomes</h3>
   <ul>
     <li>Undertake clustering analysis on large datasets.</li>
     <li>Use right Python libraries for clustering.</li>
@@ -222,6 +274,7 @@
   <ul>
   <li> <a href="https://majed23x.github.io/AIRBNB_EDA_INDEX/">EDA Open Data</a> </li>
   <li> <a href="https://majed23x.github.io/ML_Model_AirBnb/">Machine Learning Model Results</a> </li>
+  <li><a href="AirBnb_ML.docx" class="download-btn" download> Team Project Report  </a></li>
   
   
   </ul>
@@ -239,18 +292,38 @@
     <button class="toggle-btn">View More</button>
   </h2>
   <div class="module-content hidden">
-    <h3>This week we shall learn about:</h3>
-  <ul>
-    <li>The functionalities of Python libraries used in the K-Means clustering algorithm.</li>
-    <li>Role of clustering algorithms in answering some interesting questions based on a dataset.</li>
-  </ul>
-      <h3>On completion of this week, you will be able to:</h3>
+      <h3>Learning Outcomes</h3>
   <ul>
     <li>Undertake clustering analysis on large datasets.</li>
     <li>Use right Python libraries for clustering.</li>
     <li>Evaluate and interpret the results.</li>
     
   </ul>
+
+<h3>E-portfolio Activities:</h3>
+<div>
+  <h3> 1- Multi Layer Results:</h3>
+  <img src="./public/images/multi.PNG">
+  <img src="./public/images/multi_results.PNG">
+</div>
+<div>
+  <h3> 2- Precenption Results:</h3>
+  <img src="./public/images/P_1.PNG">
+  <img src="./public/images/P_2.PNG">
+  <img src="./public/images/P_3.PNG">
+  <img src="./public/images/P_4.PNG">
+</div>
+
+<div>
+  <h3> 3- Simple Preception:</h3>
+  <img src="./public/images/Simple.PNG">
+</div>
+  <ul>
+  <li><a href="./python_files/unit7/multi_layer.py" class="download-btn" download> Download  multi_layer.py </a></li>
+  <li><a href="./python_files/unit7/precenption_AND_operator.py" class="download-btn" download> Download  preception.py  </a></li>
+  <li><a href="./python_files/unit7/simple_preception.py" class="download-btn" download> Download  simple_preception.py  </a></li>
+  </ul>
+
 
   </div>
 </div>
@@ -265,13 +338,8 @@
     <button class="toggle-btn">View More</button>
   </h2>
   <div class="module-content hidden">
-    <h3>This week we shall learn about:</h3>
-  <ul>
-    <li>How the network learns from its mistake or error..</li>
-    <li>How backpropagation helps to adjust the neuron connection weights.</li>
-    <li>The application of ANN in real life scenarios.</li>
-  </ul>
-      <h3>On completion of this week, you will be able to:</h3>
+
+      <h3>Learning Outcomes:</h3>
   <ul>
     <li>Understand the error handling mechanism of ANN.</li>
     <li>Design and develop more ANN artefacts.</li>
@@ -279,16 +347,184 @@
     
   </ul>
 
+
+<h3>E-portfolio Activity:</h3>
+<div>
+  <h3> Gradient Results:</h3>
+  <img src="./public/images/Gradient.PNG">
+
+</div>
+    <ul>
+  <li><a href="./python_files/unit8/gradient.py" class="download-btn" download> Download  gradient.py </a></li>
+ </a></li>
+
+ 
+ 
+  </ul>
+
+  <h3>Collaborative Disscussion 2:</h3>
+      <ul>
+  <li><a href="unit8_cd.docx" class="download-btn" download> Collaborative Disscussion 2 </a></li>
+ </a></li>
+
+  </ul>
   </div>
 </div>
 </div>
+
+
+
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 9: Introduction to Convolutional Neural Networks
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+
+      <h3>Learning Outcomes:</h3>
+  <ul>
+    <li>Understand the application and importance of computer vision.</li>
+    <li>Undertake basic computer vision related tasks.</li>
+    
+    
+  </ul>
+
+<h3>E-portfolio Activity:</h3>
+<div>
+  <h3> CNN Results:</h3>
+  <img src="./public/images/Acc_loss.PNG">
+
+</div>
+    <ul>
+  <li><a href="./python_files/unit9/cnn.py" class="download-btn" download> Download  cnn.py </a></li>
+ </a></li>
+
+ 
+ 
+  </ul>
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 10: Natural Language Processing
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+
+      <h3>Learning Outcomes:</h3>
+  <ul>
+    <li>Understand the core advancements in NLP and how they are transforming industries.</li>
+    <li>Apply modern NLP models using Transformer architectures.</li>
+    <li>Evaluate NLP models using domain-specific metrics.</li>
+    <li>Critically assess and improve NLP models using hyperparameter tuning and transfer learning.</li>
+    
+    
+  </ul>
+
+  </div>
+</div>
+</div>
+
+
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 11: Model Selection and Evaluation
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+
+  <h3>Learning Outcomes:</h3>
+  <ul>
+    <li>Understand the importance of model selection, evaluation, and optimisation.</li>
+    <li>Undertake hyperparameter tuning to enhance model performance.</li>
+    <li>Apply appropriate evaluation metrics for different ML tasks.</li>
+    <li>Explore MLOps principles for continuous model improvement and monitoring.</li>
+    
+    
+  </ul>
+    <h3>e-Portfolio Activity:</h3>
+    <div>
+  <h3> Model Performance Results:</h3>
+  <img src="./public/images/conf.PNG">
+  <img src="./public/images/roc.PNG">
+   <img src="./public/images/terminal.PNG">
+    
+</div>
+<li><a href="./python_files/unit3/covariance.py" class="download-btn" download>📄 Download Model Performace  </a></li>
+    <h3>
+    <h3>Summative Assessment: Individual Presentation:</h3>
+        <ul>
+  <li><a href="CNN.pptx" class="download-btn" download> Presentation </a></li>
+ </a></li>
+  <li><a href="project transcript.docx" class="download-btn" download> Transcript  </a></li>
+ </a></li>
+   <li><a href="RP.mp4" class="download-btn" download> Recorded Session </a></li>
+ </a></li>
+  </ul>
+  </div>
+</div>
+</div>
+
+
+
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 12: Industry 4.0 and Machine Learning
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+
+      <h3>Learning Outcomes:</h3>
+  <ul>
+    <li>Understand the challenges and opportunities of industry 4.0 revolution.</li>
+    <li>Appreciate the impact of machine learning in future societies.</li>
+
+    <h3>End of Module Assigment:</h3>
+    <li><a href="RP.mp4" class="download-btn" download>  </a></li>
+  </ul>
+
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Professional Skills Matrix and Action Plan (PDP)
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+
       
-        </div>
+  <ul>
+
+    <li><a href="RP.mp4" class="download-btn" download> Download  </a></li>
+  </ul>
+
+  </div>
+</div>
+</div>
+
+
+
+
+
       </div>
     </div>
   </div>
-
-  <!-- Footer -->
+</div>
   <footer>
     <div class="container">
       <div class="footer-content">
@@ -296,7 +532,6 @@
           <h3>DevPortfolio</h3>
           <p>A showcase of my work, learning, and growth as a developer.</p>
         </div>
-        
         <div class="footer-column">
           <h3>Quick Links</h3>
           <ul>
@@ -306,7 +541,6 @@
             <li><a href="https://github.com/yourusername">GitHub</a></li>
           </ul>
         </div>
-        
         <div class="footer-column">
           <h3>Connect</h3>
           <div class="social-links">
@@ -317,27 +551,31 @@
           </div>
         </div>
       </div>
-      
       <div class="copyright">
         <p>&copy; 2023 Your Name. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Load Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/ScrollTrigger.min.js"></script>
   <script>
-  document.querySelectorAll('.toggle-btn').forEach(button => {
-    button.addEventListener('click', function () {
-      const content = this.closest('.module-section').querySelector('.module-content');
-      const isHidden = content.classList.toggle('hidden');
-      this.textContent = isHidden ? 'View More' : 'View Less';
+    document.querySelector('.mobile-menu').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('active');
     });
-  });
-</script>
 
+    document.addEventListener('DOMContentLoaded', () => {
+ 
+
+      document.querySelectorAll('.toggle-btn').forEach(button => {
+        button.addEventListener('click', function () {
+          const content = this.closest('.module-section').querySelector('.module-content');
+          const isHidden = content.classList.toggle('hidden');
+          this.textContent = isHidden ? 'View More' : 'View Less';
+        });
+      });
+    });
+  </script>
   <script type="module" src="js/main.js"></script>
 </body>
 </html>
-
