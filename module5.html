@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Module | GitHub E-Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    .container {
+      padding: 0 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .navbar, .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .footer-column {
+      flex: 1 1 100%;
+      margin-bottom: 1rem;
+    }
+    .footer-content {
+      flex-direction: column;
+    }
+    .mobile-menu {
+      display: none;
+    }
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .mobile-menu {
+        display: block;
+        cursor: pointer;
+      }
+    }
+    .toggle-btn {
+      background-color: #6a51cf;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-left: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .module-content.hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-transition" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: #6a51cf; transform: scaleY(0); transform-origin: bottom; z-index: 9999;"></div>
+
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">DevPortfolio</a>
+        <ul class="nav-links">
+          <li><a href="index.html" data-transition>Home</a></li>
+          <li><a href="modules.html" data-transition>Modules</a></li>
+          <li><a href="skills.html" data-transition>Skills</a></li>
+          <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+        </ul>
+        <div class="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="module-page-container">
+    <div class="container">
+      <a href="modules.html" class="back-button" data-transition>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Back to Modules
+      </a>
+
+      <div class="module-detail">
+        <div class="module-header">
+          <h1>Intelligent Agents July 2025 B</h1>
+          <p>The module provides students with a critical understanding of intelligent agent theory, tools, and programming techniques—enabling them to design, develop, and deploy state-of-the-art agent systems using languages like Java and Python.</p>
+        </div>
+
+        <div class="module-section">
+          <h2>Learning Outcomes</h2>
+          <ul>
+            <li>Identify and critically analyse agent-based systems, differentiating between architectures and approaches.</li>
+            <li>Apply and critically evaluate intelligent agent techniques to real-world problems, particularly where technical risk and uncertainty is involved.</li>
+            <li>Deploy critically appropriate software tools and skills for the design and implementation of an agent-based system, bearing in mind applicable legal, social, ethical and professional issues.</li>
+            <li>Systematically develop and implement the skills required to be effective member of a development team in a virtual professional environment, adopting real-life perspectives on team roles and organisation.</li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div id="units">
+        <div class="module-detail">
+          <div class="module-section">
+  <h2>
+    Unit 1: Introduction to Agent-Based Computing
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+    <h3>Learning Outcomes:</h3>
+  <ul >
+    <li>Have a better understanding of the role of machine learning in industry.</li>
+    <li>Identify the skill sets required to become proficient in machine learning</li>
+    <li>Know about the factors impacting machine learning and ways to address it.</li>
+    <li>Understand the categories of machine learning.</li>
+  </ul>
+  <h3>Collaborative Discussion 1:</h3>
+  <a href="AI Agent Initial.docx" class="download-btn" download>📄 Download Initial Post </a>
+</div>
+</div>
+
+
+        
+
+          </div>
+            <div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 2: Introducing First Order Logic
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+    <h3>Learning Outcomes:</h3>
+  <ul>
+    <li>Understand the core elements of first order logic.</li>
+    <li>Develop an awareness of creating and reasoning over first order logic.</li>
+  </ul>
+  <ul>
+    <h3>Peer Response:</h3>
+  <li><a href="Peer Response AI Agents.docx" class="download-btn" download>📄 Download Peer response </a></li>
+ <li> <a href="peer response 2.docx" class="download-btn" download>📄 Download Peer response </a></li>
+ 
+  </ul>
+  </div>
+</div>
+
+
+
+
+</div>
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 3: Agent Architectures
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+  <ul>
+    <h3>Learning Outcomes:</h3>
+    <li>Critically evaluate a range of agent architectures.</li>
+    <li>Select an appropriate architecture for a given task.</li>
+    <li>Explain the difference between intentions and desires.</li>
+
+  </ul>
+
+
+  <ul>
+
+  <h3>Summary Post</h3>
+    <li><a href="Summary Post AI agents.docx" class="download-btn" download>📄 Download  Summary Post  </a></li>
+ 
+ 
+  </ul>
+</div>
+</div>
+</div>
+
+
+
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 4: Hybrid Agent Architectures
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+  <ul class=>
+    <h3>Learning Outcomes:</h3>
+    <li>Critically assess agent architectures.</li>
+    <li>Justify the selection of an appropriate architecture to solve a given problem.</li>
+
+  </ul>
+</div>
+</div>
+      </div>
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 5: Agent Communication
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+    <h3>Learning Outcomes:</h3>
+  <ul>
+    <li>Develop the ability to develop and work with ontologies.</li>
+    <li>Create inter-agent communications using relevant languages.</li>
+
+  </ul>
+  <h3>Collaborative Discussion 2:</h3>
+  <a href="Agent Communication.docx" class="download-btn" download>📄 Download Initial Post </a>
+  </div>
+</div>
+
+
+
+
+</div>
+
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 6: Working Together
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+      <h3>Learning Outcomes</h3>
+  <ul>
+    <li>Develop dialogues using KQML/KIF or other appropriate agent communication languages</li>
+    <li>Understand the use and deployment of ontologies as a means of knowledge sharing.</li>
+
+    
+  </ul>
+  <h1>Assessment</h1>
+  <h4>Development Team Project: Project Report</h4>
+  <ul>
+  <li> <a href="DFAS Group C.pdf">Design Proposal for Digital Forensics Agent System (DFAS)</a> </li>
+  <li> <a href="Peer evaluation.docx">Peer evaluation</a> </li>
+  </ul>
+  <h4>Peer Response 2:</h4>
+    <ul>
+  <li> <a href="Rayyan peer.docx">Rayyan Peer Response</a> </li>
+  <li> <a href="Fahad response.docx">Fahad Peer Response</a> </li>
+  </ul>
+  </div>
+</div>
+</div>
+
+
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 7: Natural Language Processing (NLP)
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+      <h3>Learning Outcomes</h3>
+  <ul>
+    <li>Evaluate the difficulties involved in developing and deploying NLP systems.</li>
+    <li>Understand the core principles of NLP technologies.</li>
+    
+    
+  </ul>
+<h3>Summary Post 2:</h3>
+<li> <a href="Summary Post2.docx">Summary Post </a> </li>
+  </div>
+</div>
+</div>
+
+
+
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 8: Understanding Natural Language Processing (NLP)
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+
+      <h3>Learning Outcomes:</h3>
+  <ul>
+    <li>Explain the key elements of NLP models.</li>
+    <li>Engage with worked examples of common NLP methods.</li>
+    <li>Develop parse trees to support the understanding of NLP.</li>
+    
+  </ul>
+
+
+<h3>E-portfolio Activity:</h3>
+<div>
+<li><a href="./python_files/unit8/Parse_trees.py" class="download-btn" download>📄 Download Parse Trees  </a></li>
+  </div>
+</div>
+</div>
+
+
+
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 9: Introduction to Adaptive Algorithms
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+
+      <h3>Learning Outcomes:</h3>
+  <ul>
+    <li>Understand the core concepts of artificial neural networks.</li>
+    <li>Appraise the relative strengths of these techniques.</li>
+    
+    
+  </ul>
+
+<h3>Collaborative Disscussion 3:</h3>
+<a href="collaborative discussion 3.docx" class="download-btn" download>📄 Download Initial Post </a>
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 10: Deep Learning in Action
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+
+      <h3>Learning Outcomes:</h3>
+  <ul>
+    <li>Understand the development of technology and its current limitations.</li>
+    <li>Appraise existing products and services based on their socio-economic and ethical impacts.</li>
+    <li>Explain the importance of data in delivering these technologies and services.</li>
+
+    
+    
+  </ul>
+<h3>Peer Response 3:</h3>
+<a href="peer response 3.docx" class="download-btn" download>📄 Peer Response Fahad </a>
+<a href="Rayyan peer response3.docx" class="download-btn" download>📄 Peer Response Rayyan </a>
+  </div>
+</div>
+</div>
+
+
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 11: Intelligent Agents in Action
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+
+  <h3>Learning Outcomes:</h3>
+  <ul>
+    <li>Apply the concepts and theories learned to date to specific sectors.</li>
+    <li>Understand how technology can be used to drive efficiency.</li>
+    <li>Evaluate the relative merits of these new approaches in context.</li>
+
+  </ul>
+<h3>Summary Post3:</h3>
+<li><a href="Summary Post 3.docx" class="download-btn" download> Summary Post 3  </a></li>
+    <h3>Development Individual Project: Presentation:</h3>
+        <li><a href="Intelligent Agent Recording.mp4" class="download-btn" download>Recording   </a></li>
+        <li><a href="Digital Forensics.pptx" class="download-btn" download> Presentation </a></li>
+        <li><a href="./python_files/unit11/setup.py" class="download-btn" download> setup.py </a></li>
+        <li><a href="./python_files/unit11/DFAS.py" class="download-btn" download> DFAS.py </a></li>
+  </div>
+</div>
+</div>
+
+
+
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 12: The Future of Intelligent Agents
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+
+      <h3>Learning Outcomes:</h3>
+  <ul>
+    <li>Appraise current technologies.</li>
+    <li>Assess the potential evolution of technology based on today’s examples.</li>
+ <li>Evaluate the potential ethical and social considerations.</li>
+    <h3>End of Module Assigment:</h3>
+    <li><a href="./python_files/unit11/DFAS.py" class="download-btn" download> Eportfolio Report </a></li>
+  </ul>
+
+  </div>
+</div>
+</div>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>DevPortfolio</h3>
+          <p>A showcase of my work, learning, and growth as a developer.</p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="modules.html">Modules</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="https://github.com/yourusername">GitHub</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Connect</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/ScrollTrigger.min.js"></script>
+  <script>
+    document.querySelector('.mobile-menu').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+ 
+
+      document.querySelectorAll('.toggle-btn').forEach(button => {
+        button.addEventListener('click', function () {
+          const content = this.closest('.module-section').querySelector('.module-content');
+          const isHidden = content.classList.toggle('hidden');
+          this.textContent = isHidden ? 'View More' : 'View Less';
+        });
+      });
+    });
+  </script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
