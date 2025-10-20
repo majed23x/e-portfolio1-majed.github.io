@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Module | GitHub E-Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    .container {
+      padding: 0 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .navbar, .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .footer-column {
+      flex: 1 1 100%;
+      margin-bottom: 1rem;
+    }
+    .footer-content {
+      flex-direction: column;
+    }
+    .mobile-menu {
+      display: none;
+    }
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .mobile-menu {
+        display: block;
+        cursor: pointer;
+      }
+    }
+    .toggle-btn {
+      background-color: #6a51cf;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-left: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .module-content.hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-transition" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: #6a51cf; transform: scaleY(0); transform-origin: bottom; z-index: 9999;"></div>
+
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">DevPortfolio</a>
+        <ul class="nav-links">
+          <li><a href="index.html" data-transition>Home</a></li>
+          <li><a href="modules.html" data-transition>Modules</a></li>
+          <li><a href="skills.html" data-transition>Skills</a></li>
+          <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+        </ul>
+        <div class="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="module-page-container">
+    <div class="container">
+      <a href="modules.html" class="back-button" data-transition>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Back to Modules
+      </a>
+
+      <div class="module-detail">
+        <div class="module-header">
+          <h1>Research Methods and Professional Practice July 2025 B</h1>
+          <p>The module provides students with a critical understanding of intelligent agent theory, tools, and programming techniques—enabling them to design, develop, and deploy state-of-the-art agent systems using languages like Java and Python.</p>
+        </div>
+
+        <div class="module-section">
+          <h2>Learning Outcomes</h2>
+          <ul>
+    <li>Appraise the professional, legal, social, cultural and ethical issues that affect computing professionals.</li>
+    <li>Appraise the principles of academic investigation, applying them to a research topic in the applicable computing field.</li>
+    <li>Evaluate critically existing literature, research design and methodology for the chosen topic, including data analysis processes</li>
+    <li>Produce and evaluate critically a research proposal for the chosen topic..</li>
+  </ul>
+
+          </ul>
+        </div>
+      </div>
+
+      <div id="units">
+        <div class="module-detail">
+          <div class="module-section">
+  <h2>
+    Unit 1: Introduction to Research Methods. The Scientific Investigation and Ethics in Computingg
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+    <h3>Learning Outcomes:</h3>
+  <ul >
+    <li>Differentiate between inductive and deductive reasoning.</li>
+    <li>Understand why ethics are important and how they may relate to your area of research and your professional practice.</li>
+  </ul>
+  <h3>Collaborative Discussion 1:</h3>
+  <a href="" class="download-btn" download>📄  </a>
+</div>
+</div>
+
+
+        
+
+          </div>
+            <div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 2: Research Questions, the Literature Review and the Research Proposal
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+    <h3>Learning Outcomes:</h3>
+  <ul>
+    <li>Examine the characteristics that make up a suitable research topic.</li>
+  <li>Explore rational and creative methods for formulating a research idea.</li>  
+   <li> Identify means of transforming research ideas into crafted research questions and proposal.</li>
+   <li>Conduct a literature search, critique the literature and to present a literature review.</li> 
+  </ul>
+  <ul>
+
+ 
+  </ul>
+  </div>
+</div>
+
+
+
+
+</div>
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 3: Methodology and Research Methods
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+  <ul>
+    <h3>Learning Outcomes:</h3>
+    <li>Understand the different research methods.</li>
+    <li>Know which data collection methods are related to each method of research.</li>
+    <li>Have some idea which of these would be suited to your area of research.</li>
+
+  </ul>
+
+
+  <ul>
+
+
+</div>
+</div>
+</div>
+
+
+
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 4: Case Studies, Focus Groups and Observations
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+  <ul class=>
+    <h3>Learning Outcomes:</h3>
+    <li>Understand how to carry out each of these data collection methods.</li>
+    <li>Know which method would be suitable, if any, for your investigation.</li>
+<li>Consider the type of data you would obtain.</li>
+  </ul>
+</div>
+</div>
+      </div>
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 5: Interviews, Survey Methods, and Questionnaire Design
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+    <h3>Learning Outcomes:</h3>
+  <ul>
+    <li>Understand how interviews and surveys fit into research and whether either or both of these might be useful for your investigation.</li>
+    <li>Understand how pre- and post-testing can be used in research.</li>
+    <li>Design a questionnaire to obtain the responses you will need for your investigation.</li>
+    <li>Understand how the data obtained can be analysed.</li>
+  </ul>
+  </div>
+</div>
+
+
+
+
+</div>
+
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 6: Quantitative Methods - Descriptive and Inferential Statistics
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+      <h3>Learning Outcomes</h3>
+  <ul>
+    <li>Understand and apply descriptive statistics.</li>
+    <li>Identify the different levels of measurement.</li>
+    <li>Produce measures of location and spread.</li>
+    
+  </ul>
+  </div>
+</div>
+</div>
+
+
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 7: Inferential Statistics and Hypothesis Testing
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+      <h3>Learning Outcomes</h3>
+  <ul>
+    <li>Apply inferential statistics to data analysis.</li>
+    <li>Identify the correct probability distributions.</li>
+    <li>Perform appropriate hypothesis tests.</li>
+    
+  </ul>
+  </div>
+</div>
+</div>
+
+
+
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 8: Data Analysis and Visualisation
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+
+      <h3>Learning Outcomes:</h3>
+  <ul>
+    <li>Understand the different types of analysis and how they may be useful for the data you have collected.</li>
+    <li>Understand the different charts available to present the different types of data you have obtained.</li>
+    <li>Identifying key elements in Dashboards.</li>
+    
+  </ul>
+
+
+<h3>E-portfolio Activity:</h3>
+<div>
+<li><a href="./python_files/unit8/Parse_trees.py" class="download-btn" download>📄 Download Parse Trees  </a></li>
+  </div>
+</div>
+</div>
+
+
+
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 9: Validity and Generalisability in Research
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+
+      <h3>Learning Outcomes:</h3>
+  <ul>
+    <li>Understand how the concepts of validity, generalisability and reliability affect your investigation and the design of your research method.</li>
+    <li>Consider how to analyse and present the results you obtain from your investigation and how they will enable you to answer your research question.</li>
+    
+    
+  </ul>
+
+<h3>Collaborative Disscussion 3:</h3>
+<a href="collaborative discussion 3.docx" class="download-btn" download>📄 Download Initial Post </a>
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 10: Research Writing
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+
+      <h3>Learning Outcomes:</h3>
+  <ul>
+    <li>Understand how to structure a dissertation and how to prepare yourself for the writing.</li>
+
+   
+
+    
+    
+  </ul>
+<h3>Peer Response 3:</h3>
+<a href="peer response 3.docx" class="download-btn" download>📄 Peer Response Fahad </a>
+<a href="Rayyan peer response3.docx" class="download-btn" download>📄 Peer Response Rayyan </a>
+  </div>
+</div>
+</div>
+
+
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 11: Going Forward: Professional Development and Your e-Portfolio
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+
+  <h3>Learning Outcomes:</h3>
+  <ul>
+    <li>Provide necessary reflection for the completion of your learning loop.</li>
+    <li>Complete the Professional Skills matrix and ensuing action plan.</li>
+    
+
+  </ul>
+<h3>Summary Post3:</h3>
+<li><a href="Summary Post 3.docx" class="download-btn" download> Summary Post 3  </a></li>
+    <h3>Development Individual Project: Presentation:</h3>
+        <li><a href="Intelligent Agent Recording.mp4" class="download-btn" download>Recording   </a></li>
+        <li><a href="Digital Forensics.pptx" class="download-btn" download> Presentation </a></li>
+        <li><a href="./python_files/unit11/setup.py" class="download-btn" download> setup.py </a></li>
+        <li><a href="./python_files/unit11/DFAS.py" class="download-btn" download> DFAS.py </a></li>
+  </div>
+</div>
+</div>
+
+
+
+<div class="module-detail"> 
+<div class="module-section">
+  <h2>
+    Unit 12: Project Management and Managing Risk
+    <button class="toggle-btn">View More</button>
+  </h2>
+  <div class="module-content hidden">
+
+      <h3>Learning Outcomes:</h3>
+  <ul>
+    <li>Define and explain the concept of project management.</li>
+    <li>Demonstrate an appreciation of project life cycles and methodologies.</li>
+ <li>Appreciate some of the technologies/software needed to support remote collaboration.</li>
+ <li>Understand and explain how projects can be impacted by risk and uncertainty.</li>
+ <li>Prepare a risk management plan.</li>
+ <li>Appreciate how to control risk and manage project change effectively.</li>
+    <h3>End of Module Assigment:</h3>
+    <li><a href="./python_files/unit11/DFAS.py" class="download-btn" download> Eportfolio Report </a></li>
+  </ul>
+
+  </div>
+</div>
+</div>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>DevPortfolio</h3>
+          <p>A showcase of my work, learning, and growth as a developer.</p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="modules.html">Modules</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="https://github.com/yourusername">GitHub</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Connect</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/ScrollTrigger.min.js"></script>
+  <script>
+    document.querySelector('.mobile-menu').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+ 
+
+      document.querySelectorAll('.toggle-btn').forEach(button => {
+        button.addEventListener('click', function () {
+          const content = this.closest('.module-section').querySelector('.module-content');
+          const isHidden = content.classList.toggle('hidden');
+          this.textContent = isHidden ? 'View More' : 'View Less';
+        });
+      });
+    });
+  </script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
